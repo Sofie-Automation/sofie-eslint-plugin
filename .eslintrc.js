@@ -1,0 +1,10 @@
+'use strict'
+
+module.exports = {
+	extends: './node_modules/@sofie-automation/code-standard-preset/eslint/main',
+	settings: {
+		jest: {
+			version: 'latest',
+		},
+	},
+}
