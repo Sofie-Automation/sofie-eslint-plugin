@@ -1,7 +1,15 @@
 {
 	"name": "@sofie-automation/eslint-plugin",
-	"version": "0.0.0",
-	"description": "",
+	"version": "0.1.0-0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nrkno/sofie-eslint-plugin.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nrkno/sofie-eslint-plugin/issues"
+	},
+	"homepage": "https://github.com/nrkno/sofie-eslint-plugin#readme",
 	"keywords": [
 		"eslint",
 		"eslintplugin",
@@ -21,7 +29,8 @@
 		"license-validate": "yarn sofie-licensecheck --allowPackages path-scurry@1.6.1",
 		"update:eslint-docs": "eslint-doc-generator",
 		"validate:dependencies": "yarn audit --groups dependencies && yarn license-validate",
-		"validate:dev-dependencies": "yarn audit --groups devDependencies"
+		"validate:dev-dependencies": "yarn audit --groups devDependencies",
+		"release": "sofie-version"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -44,7 +53,6 @@
 		"@typescript-eslint/utils": "^5.54.1",
 		"eslint": ">=8"
 	},
-	"license": "MIT",
 	"prettier": "@sofie-automation/code-standard-preset/.prettierrc.json",
 	"lint-staged": {
 		"*.{css,json,md,scss}": [
