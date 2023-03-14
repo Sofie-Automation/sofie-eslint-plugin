@@ -9,6 +9,8 @@
 			"*": ["./node_modules/*"],
 			"{{PACKAGE-NAME}}": ["./src/index.ts"]
 		},
-		"types": ["node"]
+		"types": ["node"],
+		"declarationMap": false,
+		"sourceMap": false
 	}
 }

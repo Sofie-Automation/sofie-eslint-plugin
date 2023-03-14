@@ -19,7 +19,7 @@
 	"exports": "./dist/index.js",
 	"scripts": {
 		"prepare": "husky install",
-		"build": "yarn update:eslint-docs && rimraf dist && yarn build:main",
+		"build": "rimraf dist && yarn build:main && yarn update:eslint-docs",
 		"build:main": "tsc -p tsconfig.build.json",
 		"lint:raw": "eslint --ext .ts --ext .js --ext .tsx --ext .jsx --ignore-pattern dist",
 		"lint": "yarn lint:raw .",
@@ -61,5 +61,10 @@
 		"*.{ts,tsx,js,jsx}": [
 			"yarn lint:raw --fix"
 		]
-	}
+	},
+	"files": [
+		"/CHANGELOG.md",
+		"/README.md",
+		"/dist"
+	]
 }
