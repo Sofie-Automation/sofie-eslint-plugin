@@ -16,9 +16,12 @@
 		"lint:raw": "eslint --ext .ts --ext .js --ext .tsx --ext .jsx --ignore-pattern dist",
 		"lint": "yarn lint:raw .",
 		"lint-fix": "yarn lint --fix",
-		"license-validate": "yarn sofie-licensecheck",
-		"test": "mocha tests --recursive",
-		"update:eslint-docs": "eslint-doc-generator"
+		"test": "yarn lint && yarn unit",
+		"unit": "jest",
+		"license-validate": "yarn sofie-licensecheck --allowPackages path-scurry@1.6.1",
+		"update:eslint-docs": "eslint-doc-generator",
+		"validate:dependencies": "yarn audit --groups dependencies && yarn license-validate",
+		"validate:dev-dependencies": "yarn audit --groups devDependencies"
 	},
 	"dependencies": {},
 	"devDependencies": {
