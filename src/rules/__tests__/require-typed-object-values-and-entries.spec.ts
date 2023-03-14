@@ -1,10 +1,10 @@
 import { ESLintUtils } from '@typescript-eslint/utils'
-import rule from '../../src/rules/require-typed-object-values-and-entries'
+import rule from '../require-typed-object-values-and-entries'
 
 const ruleTester = new ESLintUtils.RuleTester({
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		project: '../../tsconfig.json',
+		project: '../../../tsconfig.json',
 		tsconfigRootDir: __dirname,
 	},
 })
