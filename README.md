@@ -2,7 +2,7 @@
 [![Node CI](https://github.com/nrkno/sofie-eslint-plugin/actions/workflows/node.yaml/badge.svg)](https://github.com/nrkno/sofie-eslint-plugin/actions/workflows/node.yaml)
 [![npm](https://img.shields.io/npm/v/@sofie-automation/eslint-plugin)](https://www.npmjs.com/package/@sofie-automation/eslint-plugin)
 
-This is the _Sofie ESLint_ library, used for defining custom [ESLint](https://eslint.org/) rules in the [_**Sofie** TV Automation System_](https://github.com/nrkno/Sofie-TV-automation/).
+This is the _Sofie ESLint_ library, used for defining custom [_ESLint_](https://eslint.org/) rules in the [_**Sofie** TV Automation System_](https://github.com/nrkno/Sofie-TV-automation/).
 
 ## General Sofie System Information
 * [_Sofie_ Documentation](https://nrkno.github.io/sofie-core/)
