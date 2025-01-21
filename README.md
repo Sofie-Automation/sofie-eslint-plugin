@@ -23,9 +23,9 @@ This library included as part of [_Sofie Code Standard Preset_](https://github.c
 💼 Configurations enabled in.\
 🌐 Set in the `all` configuration.
 
-| Name                                                                                             | Description                                                                       | 💼  |
-| :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :-- |
-| [require-typed-object-values-and-entries](docs/rules/require-typed-object-values-and-entries.md) | Require Object.values() and Object.entries() calls to have generic type specified | 🌐  |
+| Name                                                                                             | Description                                                                       | 💼 |
+| :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :- |
+| [require-typed-object-values-and-entries](docs/rules/require-typed-object-values-and-entries.md) | Require Object.values() and Object.entries() calls to have generic type specified | 🌐 |
 
 <!-- end auto-generated rules list -->
 
