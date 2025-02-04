@@ -5,8 +5,8 @@ export default ESLintUtils.RuleCreator.withoutDocs({
 		type: 'suggestion',
 		docs: {
 			description: 'Require Object.values() and Object.entries() calls to have generic type specified',
-			recommended: 'error',
-			extendsBaseRule: true,
+			// recommended: 'recommended',
+			// extendsBaseRule: true,
 		},
 		messages: {
 			useGenericValues: 'Object.values() calls must have type specified',
@@ -23,7 +23,7 @@ export default ESLintUtils.RuleCreator.withoutDocs({
 				node.callee.object.type === AST_NODE_TYPES.Identifier &&
 				node.callee.object.name === 'Object' &&
 				node.callee.property.type === AST_NODE_TYPES.Identifier &&
-				!node.typeParameters
+				!node.typeArguments
 			) {
 				if (node.callee.property.name === 'values') {
 					context.report({
