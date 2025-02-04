@@ -33,7 +33,7 @@
 		"release": "sofie-version"
 	},
 	"devDependencies": {
-		"@sofie-automation/code-standard-preset": "github:SuperFlyTV/sofie-code-standard-preset#commit=83e28ec8c6e0ea6287c20814f5dcb0cde1226b3d",
+		"@sofie-automation/code-standard-preset": "3.0.0",
 		"@types/eslint": "^9.6.1",
 		"@types/jest": "^29.5.14",
 		"@types/node": "^22.10.7",
