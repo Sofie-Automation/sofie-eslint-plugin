@@ -1,4 +1,4 @@
-import requireTypedObjectValuesAndEntries from './rules/require-typed-object-values-and-entries'
+import requireTypedObjectValuesAndEntries from './rules/require-typed-object-values-and-entries.js'
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint'
 
 export = {
