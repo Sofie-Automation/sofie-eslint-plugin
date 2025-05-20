@@ -964,7 +964,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sofie-automation/eslint-plugin@npm:0.2.0, @sofie-automation/eslint-plugin@workspace:.":
+"@sofie-automation/eslint-plugin@npm:0.2.0":
+  version: 0.2.0
+  resolution: "@sofie-automation/eslint-plugin@npm:0.2.0"
+  dependencies:
+    "@typescript-eslint/utils": "npm:^8.21.0"
+  peerDependencies:
+    eslint: ^9
+  checksum: 10c0/3bfb82eac8ec0e54c34534c3ea5ffc5f2358880ba09657504362e65c12b357aa0508e185410c48085ddd7eacf860c6d7b92f93ce993511a298da37683c77891c
+  languageName: node
+  linkType: hard
+
+"@sofie-automation/eslint-plugin@workspace:.":
   version: 0.0.0-use.local
   resolution: "@sofie-automation/eslint-plugin@workspace:."
   dependencies:
