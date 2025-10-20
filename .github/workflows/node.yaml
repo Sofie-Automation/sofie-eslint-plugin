@@ -22,6 +22,7 @@ jobs:
           node-version: 22.x
       - name: Prepare Environment
         run: |
+          corepack enable
           yarn install
           yarn build
         env:
@@ -53,6 +54,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Prepare Environment
         run: |
+          corepack enable
           yarn install
         env:
           CI: true
@@ -70,12 +72,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - name: Use Node.js 22.x
         uses: actions/setup-node@v6
         with:
           node-version: 22.x
       - name: Prepare Environment
         run: |
+          corepack enable
           yarn install
         env:
           CI: true
@@ -97,12 +102,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - name: Use Node.js 22.x
         uses: actions/setup-node@v6
         with:
           node-version: 22.x
       - name: Prepare Environment
         run: |
+          corepack enable
           yarn install
         env:
           CI: true
